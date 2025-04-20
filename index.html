@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT Z | Touge & Rally Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo general */
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header con efecto neón */
+        header {
+            background: linear-gradient(90deg, #000, #8B0000, #000);
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom: 3px solid #FF0000;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+        
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: neon 1.5s ease-in-out infinite alternate;
+        }
+        
+        @keyframes neon {
+            from {
+                text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FF0000, 0 0 20px #FF0000;
+            }
+            to {
+                text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #FF0000, 0 0 40px #FF0000;
+            }
+        }
+        
+        header p {
+            font-style: italic;
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            color: #FFD700;
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 85%;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(10, 10, 10, 0.9);
+            border: 2px solid #8B0000;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(139, 0, 0, 0.6);
+        }
+        
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #FFD700;
+            font-size: 2em;
+            border-bottom: 2px dashed #8B0000;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Secciones "Stage" */
+        .stage {
+            background: rgba(20, 20, 20, 0.8);
+            border-left: 5px solid #FF0000;
+            padding: 20px;
+            margin: 25px 0;
+            transition: transform 0.3s;
+        }
+        
+        .stage:hover {
+            transform: translateX(10px);
+            background: rgba(30, 30, 30, 0.9);
+        }
+        
+        .stage-title {
+            color: #FF0000;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3em;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+        }
+
+        /* Botón */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #8B0000, #FF0000);
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            text-decoration: none;
+            border-radius: 0;
+            margin: 20px 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(17, 17, 17, 0.9);
+            border-top: 1px solid #8B0000;
+        }
+        
+        footer a {
+            color: #FF0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PROJECT Z</h1>
+        <p>Equipo especializado en Simulador / Circuito / Touge / Rally</p>
+    </header>
+
+    <div class="container">
+        <h2>¿Qué es PROJECT Z?</h2>
+        <p>Inspirados en el legendario <strong>Project D</strong> de Initial D, somos un grupo de pilotos apasionados por el <strong>touge</strong> y el <strong>rally</strong> en Assetto Corsa. Competimos, mejoramos y compartimos nuestra pasión por la conducción extrema.</p>
+        
+        <div class="stage">
+            <div class="stage-title">STAGE 1: Mejorar en solitario en el simulador</div>
+            <p>Dominar las técnicas de derrape, frenado y aceleración en montañas.</p>
+        </div>
+        
+        <div class="stage">
+            <div class="stage-title">STAGE 2: Competir contra otros en el simulador</div>
+            <p>Demostrar nuestras habilidades en competiciones online y torneos.</p>
+        </div>
+        
+        <div class="stage">
+            <div class="stage-title">STAGE 3: Competir en la Realidad</div>
+            <p>Llevar nuestra pasión al mundo real con eventos.</p>
+        </div>
+        
+        <a href="pilotos.html" class="btn">Ver Pilotos</a>
+        <a href="contacto.html" class="btn" style="background: linear-gradient(45deg, #FF0000, #8B0000);">Retar a PROJECT Z</a>
+</div>
+    </div>
+
+    <footer>
+        <p>© 2024 PROJECT Z | Síguenos en <a href="https://www.youtube.com/@Domenikuslomb">YouTube</a></p>
+    </footer>
+</body>
+</html>

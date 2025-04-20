@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilotos | PROJECT Z</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo general */
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #000, #8B0000, #000);
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom: 3px solid #FF0000;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+        
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: neon 1.5s ease-in-out infinite alternate;
+        }
+        
+        @keyframes neon {
+            from {
+                text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FF0000, 0 0 20px #FF0000;
+            }
+            to {
+                text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #FF0000, 0 0 40px #FF0000;
+            }
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 85%;
+            margin: 40px auto;
+            padding: 30px;
+        }
+
+        /* Fichas de pilotos */
+        .piloto {
+            display: flex;
+            align-items: center;
+            background: rgba(10, 10, 10, 0.9);
+            border: 2px solid #8B0000;
+            border-radius: 5px;
+            padding: 25px;
+            margin: 30px 0;
+            box-shadow: 0 0 15px rgba(139, 0, 0, 0.6);
+            transition: all 0.3s;
+        }
+        
+        .piloto:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+        }
+        
+        .piloto img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #FF0000;
+            object-fit: cover;
+            margin-right: 25px;
+        }
+        
+        .piloto-info h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #FFD700;
+            font-size: 1.8em;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .piloto-info p {
+            margin: 8px 0;
+        }
+        
+        .stage-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #8B0000, #FF0000);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Botón */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #8B0000, #FF0000);
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            text-decoration: none;
+            border-radius: 0;
+            margin: 20px 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(17, 17, 17, 0.9);
+            border-top: 1px solid #8B0000;
+        }
+        
+        footer a {
+            color: #FF0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PILOTOS | PROJECT Z</h1>
+    </header>
+
+    <div class="container">
+        <!-- Tu ficha -->
+        <div class="piloto">
+            <img src="dome.jpg" alt="Dome">
+            <div class="piloto-info">
+                <h2>DOME | AE86 Tuned | Downhill</h2>
+                <p><strong>Especialidad:</strong> Descensos técnicos</p>
+                <p><strong>Coche:</strong> Toyota AE86 (Trueno) Tuned - Power, 200bhp. Torque, 206Nm. Weight, 900kg.</p>
+                <span class="stage-badge">STAGE 2: Compitiendo online</span>
+            </div>
+        </div>
+
+        <!-- Ficha de tu colega -->
+        <div class="piloto">
+            <img src="minortroll.jpg" alt="Minortroll">
+            <div class="piloto-info">
+                <h2>MINORTROLL | Lancer Evolution VI | Uphill</h2>
+                <p><strong>Especialidad:</strong> Control.</p>
+                <p><strong>Coche:</strong> Lancer Evolution VI - Power, 280bhp. Torque, 373Nm. Weight, 1360kg.</p>
+                <span class="stage-badge">STAGE 2: Compitiendo online</span>
+            </div>
+        </div>
+
+        <a href="index.html" class="btn">Volver al Inicio</a>
+    </div>
+
+    <footer>
+        <p>© 2024 PROJECT Z | Síguenos en <a href="https://www.youtube.com/@Domenikuslomb">YouTube</a></p>
+    </footer>
+</body>
+</html>
