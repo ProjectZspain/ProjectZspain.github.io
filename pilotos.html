@@ -20,14 +20,14 @@
         header {
             background: linear-gradient(90deg, #000, #8B0000, #000);
             text-align: center;
-            padding: 30px 20px;
+            padding: 20px;
             border-bottom: 3px solid #FF0000;
             box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
         }
         
         h1 {
             font-family: 'Orbitron', sans-serif;
-            font-size: 3em;
+            font-size: 2em;
             margin: 0;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -45,42 +45,40 @@
 
         /* Contenedor principal */
         .container {
-            width: 85%;
-            margin: 40px auto;
-            padding: 30px;
+            width: 90%;
+            margin: 20px auto;
+            padding: 15px;
         }
 
-        /* Fichas de pilotos */
+        /* Fichas de pilotos - Versión móvil primero */
         .piloto {
             display: flex;
-            align-items: center;
+            flex-direction: column;
             background: rgba(10, 10, 10, 0.9);
             border: 2px solid #8B0000;
             border-radius: 5px;
-            padding: 25px;
-            margin: 30px 0;
+            padding: 15px;
+            margin: 20px 0;
             box-shadow: 0 0 15px rgba(139, 0, 0, 0.6);
-            transition: all 0.3s;
-        }
-        
-        .piloto:hover {
-            transform: scale(1.02);
-            box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
         }
         
         .piloto img {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             border: 3px solid #FF0000;
             object-fit: cover;
-            margin-right: 25px;
+            margin: 0 auto 15px;
+        }
+        
+        .piloto-info {
+            text-align: center;
         }
         
         .piloto-info h2 {
             font-family: 'Orbitron', sans-serif;
             color: #FFD700;
-            font-size: 1.8em;
+            font-size: 1.3em;
             margin: 0 0 10px 0;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -88,54 +86,96 @@
         
         .piloto-info p {
             margin: 8px 0;
+            font-size: 0.9em;
+            line-height: 1.4;
         }
         
         .stage-badge {
             display: inline-block;
             background: linear-gradient(45deg, #8B0000, #FF0000);
             color: white;
-            padding: 5px 15px;
+            padding: 4px 12px;
             border-radius: 20px;
-            font-size: 0.9em;
-            margin-top: 10px;
+            font-size: 0.8em;
+            margin-top: 8px;
             font-weight: bold;
             text-transform: uppercase;
         }
 
         /* Botón */
         .btn {
-            display: inline-block;
-            padding: 12px 30px;
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            padding: 12px;
             background: linear-gradient(45deg, #8B0000, #FF0000);
             color: white;
             font-family: 'Orbitron', sans-serif;
             text-decoration: none;
             border-radius: 0;
-            margin: 20px 0;
+            margin: 20px auto;
             font-weight: bold;
             letter-spacing: 1px;
             text-transform: uppercase;
             box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
-            transition: all 0.3s;
-        }
-        
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+            text-align: center;
         }
 
         /* Footer */
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 15px;
             background: rgba(17, 17, 17, 0.9);
             border-top: 1px solid #8B0000;
+            font-size: 0.9em;
         }
         
         footer a {
             color: #FF0000;
             text-decoration: none;
             font-weight: bold;
+        }
+
+        /* Versión para escritorio (768px en adelante) */
+        @media (min-width: 768px) {
+            .container {
+                width: 85%;
+                padding: 30px;
+            }
+            
+            .piloto {
+                flex-direction: row;
+                padding: 25px;
+                align-items: center;
+            }
+            
+            .piloto img {
+                width: 120px;
+                height: 120px;
+                margin: 0 25px 0 0;
+            }
+            
+            .piloto-info {
+                text-align: left;
+            }
+            
+            .piloto-info h2 {
+                font-size: 1.8em;
+            }
+            
+            .piloto-info p {
+                font-size: 1em;
+            }
+            
+            h1 {
+                font-size: 3em;
+            }
+            
+            .btn {
+                display: inline-block;
+                width: auto;
+                padding: 12px 30px;
+            }
         }
     </style>
 </head>
